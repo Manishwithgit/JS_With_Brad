@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Project</title>
+
+
+    <style>
+        /* *{box-sizing: border-box;} */
+        body{
+            background: rgb(159, 197, 149);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* height: 200vh; */
+            /* overflow: hidden; */
+            margin: 0;
+            overflow-x: hidden; 
+        }
+
+        h1{
+            /* margin: 1.2rem; */
+            margin: 11px;
+            color: rgb(161, 95, 13);
+        }
+
+        .diba{
+            background: rgb(175, 87, 87);
+            color: aliceblue;
+            margin: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 333px;
+            height:222px;
+            /* border: 4px solid orange; */
+            border-radius: 11px;
+            box-shadow: 2px 4px 6px rgba(red, green, blue, alpha);
+
+            transform: translateX(400%);
+            transition: transform 0.5s ease ;
+
+
+        }
+
+        .diba:nth-of-type(even){
+            transform: translateX(-400%);
+        }
+
+        .diba.appear{
+            transform: translateX(0);
+
+        }
+
+        .diba h2{
+            font-size: 44px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Scroll My Page</h1>
+
+    <!-- <div class="diba appear"><h2>Manish 00</h2></div> -->
+    <div class="diba"><h2>Manish 01</h2></div>
+    <div class="diba"><h2>Manish 02</h2></div>
+    <div class="diba"><h2>Manish 03</h2></div>
+    <div class="diba"><h2>Manish 04</h2></div>
+    <div class="diba"><h2>Manish 05</h2></div>
+    <div class="diba"><h2>Manish 06</h2></div>
+    <div class="diba"><h2>Manish 07</h2></div>
+    <div class="diba"><h2>Manish 08</h2></div>
+    <div class="diba"><h2>Manish 09</h2></div>
+    <div class="diba"><h2>Manish 10</h2></div>
+    <div class="diba"><h2>Manish 11</h2></div>
+    <div class="diba"><h2>Manish 12</h2></div>
+    <div class="diba"><h2>Manish 13</h2></div>
+    <div class="diba"><h2>Manish 14</h2></div>
+    <div class="diba"><h2>Manish 15</h2></div>
+    <div class="diba"><h2>Manish 16</h2></div>
+
+
+    <script src="./scroll.js"></script>
+</body>
+</html>

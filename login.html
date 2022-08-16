@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <style>
+        *{box-sizing: border-box;}
+
+      body{
+        background: orchid;
+        color: aliceblue;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+
+    }
+
+    .container{
+        background-color: rgba(10, 1, 1, 0.4);
+        padding: 20px 40px;
+        border-radius: 5px;
+    
+    }
+    .container h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container a{
+        text-decoration: none;
+        color: rgb(14, 13, 13);
+        
+    }
+
+    .btn{
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        background: lightblue;
+        padding: 15px;
+        font-family: inherit;
+        font-size: 16px;
+        border: 0;
+        border-radius: 5px;
+
+    }
+
+    .btn:focus{outline: 0;}
+
+    .btn:active{scale:0.98;}
+
+    .text{margin-top: 30px;}
+
+    .formControl{
+        position: relative;
+        margin: 20px 0 40px;
+        width: 300px;
+
+    }
+
+    .formControl input{
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid wheat;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+        color: white;
+    }
+    .formControl input:focus,
+    .formControl input:valid{
+        outline: 0;
+        border-bottom-color: lightblue;
+    }
+
+    .formControl label{position: absolute;top: 15px; left: 0;}
+
+    .formControl label span{
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+    }
+
+    .formControl input:focus +label span,
+    .formControl input:valid+label span{
+        color: lightblue;
+        transform: translateY(-30px);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <div class="formControl">
+                <input type="text" required>
+                <label>Email</label>
+                <!-- <label>
+                    <span style="transition-delay:0ms">E</span>
+                    <span style="transition-delay:50ms">m</span>
+                    <span style="transition-delay:100ms">a</span>
+                    <span style="transition-delay:150ms">i</span>
+                    <span style="transition-delay:200ms">l</span>
+                </label> -->
+            </div>
+            <div class="formControl">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Login</button>
+
+            <p class="text">Don't have an account? <strong> <a  href="#">Register</a></strong></p>
+        </form>
+
+    </div>
+    
+    
+
+
+
+    <script src="./login.js"></script>
+</body>
+</html>
